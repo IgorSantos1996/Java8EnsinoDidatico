@@ -4,7 +4,7 @@ public class FormatacaodeNumeros {
     public static void main(String[] args) {
         DecimalFormat df = new DecimalFormat();
         short idade = 38;
-        df.applyPattern("000");
+        df.applyPattern("000"); // representando em três digitos mesmo que o valor contenha menos que isso
         System.out.println(df.format(idade));
         int quantidade = 9750;
         df.applyPattern("#0,000");
