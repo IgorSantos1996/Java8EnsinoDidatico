@@ -23,11 +23,12 @@ public class Cap5exe05 {
                 System.out.println("Informe a placa do carro: ");
                 placa[escolha] = scan.next();
                 for (int i = 0; i < vaga.length; i++) {
-                    if (vaga[i] == 0) {
+                    if (vaga[escolha] == 0) {
                         vaga[escolha] = escolha;
-                        continue;
-                    } else if (vaga[escolha] == escolha) {
+                        break;
+                    } else {
                         System.out.println("vaga ocupada ou inexistente");
+                        break;
                     }
                 }
                 break;
