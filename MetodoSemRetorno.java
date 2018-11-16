@@ -1,0 +1,41 @@
+public class MetodoSemRetorno {
+    public static void main(String[] args) {
+        imprimir();
+        imprimirTexto("olá");
+        mostrarQuadrado(10);
+        somar(10, 20);
+        mostrarMaior(10, 20, 30);
+        mostrarSexoPorExtenso('F');
+    }
+
+    public static void imprimir() {
+        System.out.println("Aprendendo a Linguagem Java");
+    }
+
+    public static void imprimirTexto(String texto) {
+        System.out.println(texto);
+    }
+
+    public static void somar(int a, int b) {
+        System.out.println(a + b);
+    }
+
+    public static void mostrarQuadrado(int valor) {
+        System.out.println(Math.pow(valor, 4));
+    }
+
+    public static void mostrarMaior(int a, int b, int c) {
+        System.out.println(Math.max(c, Math.max(a, b)));
+    }
+
+    public static void mostrarSexoPorExtenso(char sexo) {
+        if (sexo == 'F') {
+            System.out.println("Feminino");
+        } else if (sexo == 'M') {
+
+        } else {
+            System.out.println("Sexo desconhecido");
+        }
+    }
+
+}
