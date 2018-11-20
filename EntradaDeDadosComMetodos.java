@@ -16,14 +16,14 @@ public class EntradaDeDadosComMetodos {
                     break;
                 }
             } catch (NumberFormatException erro) {
-                JOptionPane.showMessageDialog(null, "Digite apenas valores numéricos !! \n" + erro.toString);
+                JOptionPane.showMessageDialog(null, "Digite apenas valores numéricos !! \n" + erro.toString());
 
             }
         }
         return n;
     }
 
-    public static float lerNumeroInt(float minimo, float maximo, String men) {
+    public static float lerNumeroFloat(float minimo, float maximo, String men) {
         float n = 0;
         while (true) {
             try {
@@ -54,7 +54,7 @@ public class EntradaDeDadosComMetodos {
                 }
 
             } catch (NumberFormatException erro) {
-                JOptionPane.showMessageDialog(null, "Digite apenas valores numéricos !!\n" + erro.toString);
+                JOptionPane.showMessageDialog(null, "Digite apenas valores numéricos !!\n" + erro.toString());
             }
 
         }
